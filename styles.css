@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff9800;
+}
+
+.title {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.instructions,
+.key-section,
+.user-info,
+.admin-link {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.instructions h2,
+.user-info h2 {
+    color: #ff9800;
+}
+
+.button {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.key-display {
+    font-size: 1.5em;
+    margin-top: 10px;
+    padding: 15px;
+    background: #333;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.admin-link a {
+    color: #ff9800;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.admin-link a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #ff9800;
+}
+
+/* Animations */
+@keyframes gradientBG {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.animated.fadeIn {
+    animation: fadeIn 1.5s ease-out;
+}
+
+.animated.zoomIn {
+    animation: zoomIn 1s ease-out;
+}
+
+.animated.slideInUp {
+    animation: slideInUp 1s ease-out;
+}
+
